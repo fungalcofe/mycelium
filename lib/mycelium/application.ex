@@ -8,8 +8,8 @@ defmodule Mycelium.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: Mycelium.Worker.start_link(arg)
-      # {Mycelium.Worker, arg}
+      {Mycelium.Colony.Listener, []},
+      {Mycelium.Colony.Authenticator, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

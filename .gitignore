@@ -1,3 +1,6 @@
+# Variable and private data.
+/priv/
+
 # The directory Mix will write compiled artifacts to.
 /_build/
 
